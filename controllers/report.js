@@ -87,7 +87,7 @@ export const myPoseReport = async (req, res) => {
     if (filteredData.length > 0) {
       res.json(filteredData);
     } else {
-      res.status(404).json({ error: 'Entry not found' });
+      res.status(209).json( 'Entry not found' ); 
     }
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -104,7 +104,7 @@ export const myExerciseReport = async (req, res) => {
     if (filteredData.length > 0) {
       res.json(filteredData);
     } else {
-      res.status(404).json({ error: 'Entry not found' });
+      res.status(209).json( 'Entry not found' ); 
     }
   } catch (err) {
     res.status(500).json({ error: err.message });
